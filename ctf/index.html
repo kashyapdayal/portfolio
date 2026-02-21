@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kashyap Dayal — CTF Arena. Solve security challenges and prove your skills.">
+    <title>CTF Arena | Kashyap Dayal</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&family=Space+Mono&display=swap"
+        rel="stylesheet">
+
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .ctf-header {
+            padding-top: 120px;
+            text-align: center;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--mint);
+            text-decoration: none;
+            font-family: 'Space Mono', monospace;
+            margin-bottom: 2rem;
+            transition: opacity 0.2s;
+        }
+
+        .back-link:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Particles Background -->
+    <div id="hero-particles"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" class="shield-icon">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+                <span>KD // CTF</span>
+            </a>
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#skills">Skills</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="#" class="active">CTF</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="section-padding">
+        <div class="ctf-header" data-aos="fade-down">
+            <a href="../index.html" class="back-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                Return Home
+            </a>
+            <h1 class="section-title">CTF Arena</h1>
+            <p class="section-sub text-muted">Solve the challenges. Prove your skills.</p>
+        </div>
+
+        <div class="ctf-score-bar" data-aos="fade-up">
+            <span class="font-mono text-mint">Challenges solved: <strong id="solved-count">0</strong> / 5</span>
+        </div>
+
+        <div class="ctf-grid">
+            <!-- Challenge 001 -->
+            <div class="card ctf-card easy" id="ctf-card-001" data-aos="fade-up" data-aos-delay="100">
+                <div class="ctf-card-header">
+                    <div>
+                        <span class="ctf-id font-mono">#001</span>
+                        <h3 class="ctf-title">The Hidden Path</h3>
+                    </div>
+                    <span class="ctf-badge easy-badge">EASY</span>
+                </div>
+                <p class="ctf-meta text-muted font-mono">Category: Web / Source Code Analysis</p>
+                <p class="ctf-desc">The developer left a comment they shouldn't have. Inspect the source. The flag is
+                    hidden in plain sight.</p>
+                <div class="ctf-input-row">
+                    <input type="text" id="flag-001" class="flag-input font-mono" placeholder="CTF{...}"
+                        autocomplete="off">
+                    <button class="btn-submit" onclick="submitFlag('001')">Submit</button>
+                </div>
+                <div class="ctf-feedback" id="feedback-001"></div>
+            </div>
+
+            <!-- Challenge 002 -->
+            <div class="card ctf-card easy" id="ctf-card-002" data-aos="fade-up" data-aos-delay="150">
+                <div class="ctf-card-header">
+                    <div>
+                        <span class="ctf-id font-mono">#002</span>
+                        <h3 class="ctf-title">Base of Operations</h3>
+                    </div>
+                    <span class="ctf-badge easy-badge">EASY</span>
+                </div>
+                <p class="ctf-meta text-muted font-mono">Category: Cryptography / Encoding</p>
+                <p class="ctf-desc">Decode the following string: <br><code class="font-mono"
+                        style="color:var(--mint)">Q1RGe2I0c2VfNjRfbWFzdGVyfQ==</code></p>
+                <div class="ctf-input-row">
+                    <input type="text" id="flag-002" class="flag-input font-mono" placeholder="CTF{...}"
+                        autocomplete="off">
+                    <button class="btn-submit" onclick="submitFlag('002')">Submit</button>
+                </div>
+                <div class="ctf-feedback" id="feedback-002"></div>
+            </div>
+
+            <!-- Challenge 003 -->
+            <div class="card ctf-card medium" id="ctf-card-003" data-aos="fade-up" data-aos-delay="200">
+                <div class="ctf-card-header">
+                    <div>
+                        <span class="ctf-id font-mono">#003</span>
+                        <h3 class="ctf-title">Caesar's Secret</h3>
+                    </div>
+                    <span class="ctf-badge medium-badge">MEDIUM</span>
+                </div>
+                <p class="ctf-meta text-muted font-mono">Category: Cryptography / Caesar Cipher</p>
+                <p class="ctf-desc">Rotate and reveal: <br><code class="font-mono"
+                        style="color:var(--mint)">PGS{pnrfne_pvcure_jva}</code></p>
+                <div class="ctf-input-row">
+                    <input type="text" id="flag-003" class="flag-input font-mono" placeholder="CTF{...}"
+                        autocomplete="off">
+                    <button class="btn-submit" onclick="submitFlag('003')">Submit</button>
+                </div>
+                <div class="ctf-feedback" id="feedback-003"></div>
+            </div>
+
+            <!-- Challenge 004 -->
+            <div class="card ctf-card medium" id="ctf-card-004" data-aos="fade-up" data-aos-delay="250">
+                <div class="ctf-card-header">
+                    <div>
+                        <span class="ctf-id font-mono">#004</span>
+                        <h3 class="ctf-title">Pixel Perfect</h3>
+                    </div>
+                    <span class="ctf-badge medium-badge">MEDIUM</span>
+                </div>
+                <p class="ctf-meta text-muted font-mono">Category: Forensics / Metadata</p>
+                <p class="ctf-desc">EXIF data often hides secrets. Check the profile photo metadata.</p>
+                <div class="ctf-input-row">
+                    <input type="text" id="flag-004" class="flag-input font-mono" placeholder="CTF{...}"
+                        autocomplete="off">
+                    <button class="btn-submit" onclick="submitFlag('004')">Submit</button>
+                </div>
+                <div class="ctf-feedback" id="feedback-004"></div>
+            </div>
+
+            <!-- Challenge 005 -->
+            <div class="card ctf-card hard" id="ctf-card-005" data-aos="fade-up" data-aos-delay="300">
+                <div class="ctf-card-header">
+                    <div>
+                        <span class="ctf-id font-mono">#005</span>
+                        <h3 class="ctf-title">The Last Packet</h3>
+                    </div>
+                    <span class="ctf-badge hard-badge">HARD</span>
+                </div>
+                <p class="ctf-meta text-muted font-mono">Category: Network / DNS TXT</p>
+                <p class="ctf-desc">DNS TXT record value for <code class="font-mono">flag.kashyap.local</code> in hex:
+                    <br><code class="font-mono"
+                        style="color:var(--mint)">435446 7b7061636b 65745f736e 69666665 727d</code></p>
+                <div class="ctf-input-row">
+                    <input type="text" id="flag-005" class="flag-input font-mono" placeholder="CTF{...}"
+                        autocomplete="off">
+                    <button class="btn-submit" onclick="submitFlag('005')">Submit</button>
+                </div>
+                <div class="ctf-feedback" id="feedback-005"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="text-muted">Kashyap Dayal © 2026 // CTF Arena</p>
+        </div>
+    </footer>
+
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- Canvas Confetti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
+    <!-- Custom Script -->
+    <script src="../script.js"></script>
+    <script>
+        // Adjust paths for profile photo challenge if needed
+        // but it's easier to keep the same logic in script.js
+    </script>
+</body>
+
+</html>

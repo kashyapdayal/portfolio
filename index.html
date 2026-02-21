@@ -1,0 +1,647 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Kashyap Dayal — Ethical Hacker, Penetration Tester, Security Researcher. Explore my projects, CTF writeups and certifications.">
+    <meta property="og:title" content="Kashyap Dayal | Cybersecurity Portfolio">
+    <meta property="og:image" content="https://kashyap7225.github.io/assets/og-preview.png">
+    <title>Kashyap Dayal | Security Researcher</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&family=Space+Mono&display=swap"
+        rel="stylesheet">
+
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Particles Background -->
+    <div id="hero-particles"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" class="shield-icon">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+                <span>KD</span>
+            </a>
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="ctf/index.html">CTF</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="assets/cv.pdf" class="btn-outline" target="_blank">Download CV</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section-padding">
+        <div class="hero-content" data-aos="fade-up">
+            <div class="profile-container">
+                <img src="assets/photo.jpg" alt="Profile Photo" class="profile-photo">
+                <div class="ring-glow"></div>
+            </div>
+
+            <div class="hero-text">
+                <h1 class="name">Kashyap Dayal</h1>
+                <div class="role-container">
+                    <span id="typewriter" class="role text-mint font-mono"></span><span class="cursor">|</span>
+                </div>
+
+                <blockquote class="quote">
+                    "I break systems to build stronger ones."
+                </blockquote>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn-primary">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                        </svg>
+                        View Projects
+                    </a>
+                    <a href="assets/cv.pdf" class="btn-primary" target="_blank">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                        Download CV
+                    </a>
+                    <a href="#contact" class="btn-primary">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        Contact Me
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <span class="stat-pill">BCA @ Yenepoya</span>
+                    <span class="stat-pill">Intern at Cynux ERA</span>
+                    <span class="stat-pill">CTF Developer</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding">
+        <h2 class="section-title" data-aos="fade-right">Who Am I</h2>
+        <div class="about-grid">
+            <div class="about-text" data-aos="fade-up" data-aos-delay="100">
+                <p>I'm Kashyap — a BCA student obsessed with offensive security, breaking things for good, and building
+                    tools that protect.</p>
+                <p>When I'm not hunting for vulnerabilities, I'm exploring CTF challenges.</p>
+
+                <div class="currently-learning mt-2">
+                    <h3 class="subsection-title">Currently Learning</h3>
+                    <div class="terminal-card font-mono text-mint">
+                        <div class="term-line">&gt; Advanced Web Pentesting</div>
+                        <div class="term-line">&gt; Linux Kernel Security</div>
+                        <div class="term-line">&gt; Malware Analysis</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-stats" data-aos="fade-left" data-aos-delay="200">
+                <!-- Music Player -->
+                <div class="music-player" id="music-player">
+                    <!-- Blurred Album Art Background -->
+                    <div class="mp-bg" id="mp-bg"></div>
+                    <div class="mp-bg-overlay"></div>
+
+                    <!-- Inner content -->
+                    <div class="mp-inner">
+                        <!-- Album Art + Track Info -->
+                        <div class="mp-top">
+                            <div class="mp-art-wrap">
+                                <img id="mp-art" src="assets/music/Lana Del Rey" alt="Album Art"
+                                    onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22><rect fill=%22%23172019%22 width=%22100%22 height=%22100%22/><text x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%233dffa0%22 font-size=%2232%22>♪</text></svg>'">
+                            </div>
+                            <div class="mp-track-info">
+                                <p class="mp-title" id="mp-title">Track Title</p>
+                                <p class="mp-artist font-mono" id="mp-artist">Artist Name</p>
+                                <span class="mp-badge font-mono">NOW PLAYING</span>
+                            </div>
+                        </div>
+
+                        <!-- Progress Bar -->
+                        <div class="mp-progress-wrap" id="mp-progress-wrap">
+                            <div class="mp-progress-bar" id="mp-progress-bar">
+                                <div class="mp-progress-fill" id="mp-progress-fill"></div>
+                                <div class="mp-progress-thumb" id="mp-progress-thumb"></div>
+                            </div>
+                            <div class="mp-time">
+                                <span class="font-mono" id="mp-current">0:00</span>
+                                <span class="font-mono" id="mp-duration">0:00</span>
+                            </div>
+                        </div>
+
+                        <!-- Controls -->
+                        <div class="mp-controls">
+                            <button class="mp-btn" id="mp-speed" title="Playback Speed"
+                                onclick="mpToggleSpeed()">1.0x</button>
+                            <button class="mp-btn" id="mp-prev" title="Previous" onclick="mpPrev()">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M6 6h2v12H6zm3.5 6 8.5 6V6z" />
+                                </svg>
+                            </button>
+                            <button class="mp-btn mp-play-btn" id="mp-play" title="Play / Pause" onclick="mpToggle()">
+                                <svg id="mp-play-icon" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                                <svg id="mp-pause-icon" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"
+                                    style="display:none">
+                                    <path d="M6 19h4V5H6zm8-14v14h4V5z" />
+                                </svg>
+                            </button>
+                            <button class="mp-btn" id="mp-next" title="Next" onclick="mpNext()">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M6 18l8.5-6L6 6v12zm2-8.14 5.05 3.57L8 15.14V9.86zm7-3.86h2v12h-2z" />
+                                </svg>
+                            </button>
+                            <button class="mp-btn mp-lyrics-btn" id="mp-lyrics-toggle" title="Lyrics"
+                                onclick="mpToggleLyrics()">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm0 16c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7zm-1-11h2v6h-2zm0 8h2v2h-2z" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="mp-tracklist" id="mp-tracklist"></div>
+                        <div class="mp-lyrics-panel" id="mp-lyrics-panel">
+                            <p class="mp-lyrics-label font-mono text-mint">// LYRICS</p>
+                            <div class="mp-lyrics-body font-mono" id="mp-lyrics-body">No lyrics added yet</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+         CERTIFICATIONS  (big showcase with image frames)
+    ══════════════════════════════════════════════════════ -->
+    <section id="certifications" class="certifications section-padding">
+        <h2 class="section-title" data-aos="fade-right">Certifications</h2>
+
+        <div class="cert-slider-container">
+            <div class="cert-slider-track">
+                <!-- Original Set -->
+                <div class="cert-card-v2">
+                    <div class="cert-img-container">
+                        <img src="assets/cert_img/macquarie_university_logo.jpg" alt="Mobile Security" class="cert-img"
+                            onerror="this.src='assets/cert_img/macquarie_university_logo.jpg'">
+                        <div class="cert-overlay">
+                            <a href="https://www.coursera.org/account/accomplishments/verify/3EJWBFUN9W8I"
+                                target="_blank" class="btn-cert">Verify ↗</a>
+                        </div>
+                    </div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">Mobile Security</h3>
+                        <p class="cert-issuer">Macquarie University</p>
+                    </div>
+                </div>
+
+                <div class="cert-card-v2">
+                    <div class="cert-img-container">
+                        <img src="assets/cert_img/tcm_security_inc_logo.jpg" alt="Linux 100: Fundamentals"
+                            class="cert-img" onerror="this.src='assets/cert_img/tcm_security_inc_logo.jpg'">
+                        <div class="cert-overlay">
+                            <a href="https://linkedin.com/in/kashyap-dayal-817201264" target="_blank"
+                                class="btn-cert">Verify ↗</a>
+                        </div>
+                    </div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">Linux 100: Fundamentals</h3>
+                        <p class="cert-issuer">TCM Security Inc.</p>
+                    </div>
+                </div>
+
+                <div class="cert-card-v2">
+                    <div class="cert-img-container">
+                        <img src="assets/cert_img/teamtriada_logo.jpg" alt="CTF" class="cert-img"
+                            onerror="this.src='assets/cert_img/teamtriada_logo.jpg'">
+                        <div class="cert-overlay">
+                            <a href="https://certificate.givemycertificate.com/c/3ef24f42-21b0-4d6a-83c3-c623a26a02a2"
+                                target="_blank" class="btn-cert">Verify ↗</a>
+                        </div>
+                    </div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">Certificate of Participation</h3>
+                        <p class="cert-issuer">Team Triada</p>
+                    </div>
+                </div>
+
+                <!-- Duplicate for Infinite Loop -->
+                <div class="cert-card-v2">
+                    <div class="cert-img-container">
+                        <img src="assets/cert_img/macquarie_university_logo.jpg" alt="Mobile Security" class="cert-img"
+                            onerror="this.src='assets/cert_img/macquarie_university_logo.jpg'">
+                        <div class="cert-overlay">
+                            <a href="https://www.coursera.org/account/accomplishments/verify/3EJWBFUN9W8I"
+                                target="_blank" class="btn-cert">Verify ↗</a>
+                        </div>
+                    </div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">Mobile Security</h3>
+                        <p class="cert-issuer">Macquarie University</p>
+                    </div>
+                </div>
+                <div class="cert-card-v2">
+                    <div class="cert-img-container">
+                        <img src="assets/cert_img/tcm_security_inc_logo.jpg" alt="Linux 100: Fundamentals"
+                            class="cert-img" onerror="this.src='assets/cert_img/tcm_security_inc_logo.jpg'">
+                        <div class="cert-overlay">
+                            <a href="https://linkedin.com/in/kashyap-dayal-817201264" target="_blank"
+                                class="btn-cert">Verify ↗</a>
+                        </div>
+                    </div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">Linux 100: Fundamentals</h3>
+                        <p class="cert-issuer">TCM Security Inc.</p>
+                    </div>
+                </div>
+                <div class="cert-card-v2">
+                    <div class="cert-img-container">
+                        <img src="assets/cert_img/teamtriada_logo.jpg" alt="CTF" class="cert-img"
+                            onerror="this.src='assets/cert_img/teamtriada_logo.jpg'">
+                        <div class="cert-overlay">
+                            <a href="https://certificate.givemycertificate.com/c/3ef24f42-21b0-4d6a-83c3-c623a26a02a2"
+                                target="_blank" class="btn-cert">Verify ↗</a>
+                        </div>
+                    </div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">Certificate of Participation</h3>
+                        <p class="cert-issuer">Team Triada</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+         SKILLS  (compact — tags + mini progress bars)
+    ══════════════════════════════════════════════════════ -->
+    <section id="skills" class="skills section-padding skills-v3">
+        <h2 class="section-title" data-aos="fade-right">Tools & Skills</h2>
+        <div class="skills-v3-container" data-aos="fade-up">
+            <div class="skill-table-wrapper">
+                <table class="skill-table">
+                    <thead>
+                        <tr>
+                            <th>Skill / Tool</th>
+                            <th>Field / Proficiency</th>
+                            <th>Impact & Experience</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="skill-name">Web Pentesting</span></td>
+                            <td><span class="skill-field">Offensive Security</span> <small>●●●●○</small></td>
+                            <td>Identified critical flaws in mock systems, improving web asset resilience by 40%.</td>
+                        </tr>
+                        <tr>
+                            <td><span class="skill-name">Network Security</span></td>
+                            <td><span class="skill-field">Defense</span> <small>●●●○○</small></td>
+                            <td>Optimized firewall rules and segmented local networks for enhanced detection.</td>
+                        </tr>
+                        <tr>
+                            <td><span class="skill-name">Python</span></td>
+                            <td><span class="skill-field">Automation</span> <small>●●●●●</small></td>
+                            <td>Developed 15+ automated security tools, reducing recon time by nearly 60%.</td>
+                        </tr>
+                        <tr>
+                            <td><span class="skill-name">Bash</span></td>
+                            <td><span class="skill-field">Scripting</span> <small>●●●●○</small></td>
+                            <td>Created a custom automation environment for rapid deployment of CTF challenges.</td>
+                        </tr>
+                        <tr>
+                            <td><span class="skill-name">Burp Suite</span></td>
+                            <td><span class="skill-field">Web Mastery</span> <small>●●●●○</small></td>
+                            <td>Bypassed complex filters using advanced proxying and injection techniques.</td>
+                        </tr>
+                        <tr>
+                            <td><span class="skill-name">Docker</span></td>
+                            <td><span class="skill-field">Infrastructure</span> <small>●●●●○</small></td>
+                            <td>Orchestrated vulnerable lab environments for high-fidelity security testing.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Projects Section -->
+
+    <section id="projects" class="projects section-padding">
+        <h2 class="section-title" data-aos="fade-right">Projects</h2>
+        <div class="projects-grid">
+
+            <div class="card project-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="project-header">
+                    <span class="project-status red">●</span>
+                    <h3 class="project-title">RAKSHA</h3>
+                </div>
+                <p class="project-subtitle text-muted">Automated Vulnerability Assessment Framework</p>
+                <p class="project-desc">Built a modular pentesting pipeline automating recon, scanning, and report
+                    generation for efficient assessments.</p>
+                <div class="project-tags">
+                    <span class="tag">Python</span><span class="tag">Security</span><span class="tag">CLI</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/kashyapdayal" target="_blank" class="link-btn">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                        </svg>
+                        GitHub ↗
+                    </a>
+                </div>
+            </div>
+
+            <div class="card project-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="project-header">
+                    <span class="project-status green">●</span>
+                    <h3 class="project-title">SAHAYA</h3>
+                </div>
+                <p class="project-subtitle text-muted">Security Awareness Toolkit for Non-Technical Users</p>
+                <p class="project-desc">Interactive training platform simulating phishing, password hygiene, and social
+                    engineering attacks for awareness.</p>
+                <div class="project-tags">
+                    <span class="tag">Python</span><span class="tag">Web</span><span class="tag">Education</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/kashyapdayal" target="_blank" class="link-btn">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                        </svg>
+                        GitHub ↗
+                    </a>
+                </div>
+            </div>
+
+            <div class="card project-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="project-header">
+                    <span class="project-status yellow">●</span>
+                    <h3 class="project-title">CTF Writeups</h3>
+                </div>
+                <p class="project-subtitle text-muted">Documented solutions for 40+ CTF challenges</p>
+                <p class="project-desc">Documented walkthroughs across picoCTF, TryHackMe, and HackTheBox — covering
+                    web, crypto, forensics, and more.</p>
+                <div class="project-tags">
+                    <span class="tag">CTF</span><span class="tag">Documentation</span><span class="tag">Security</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/kashyapdayal" target="_blank" class="link-btn">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                        </svg>
+                        GitHub ↗
+                    </a>
+                </div>
+            </div>
+
+            <div class="card project-card coming-soon" data-aos="fade-up" data-aos-delay="400">
+                <div class="project-header">
+                    <span class="project-status grey">○</span>
+                    <h3 class="project-title">Next Project</h3>
+                </div>
+                <p class="project-subtitle text-muted">Coming Soon</p>
+                <p class="project-desc">Something's brewing in the lab. Stay tuned.</p>
+                <div class="project-tags">
+                    <span class="tag">???</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTF Arena Section -->
+    <!-- CTF{s0urc3_c0d3_s3cr3ts} is hidden here for those who look -->
+
+
+    <!-- External Scripts -->
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="timeline section-padding">
+        <h2 class="section-title" data-aos="fade-right">The Journey</h2>
+        <div class="timeline-container">
+
+            <div class="timeline-item left" data-aos="fade-right">
+                <div class="timeline-dot past"></div>
+                <div class="card timeline-card">
+                    <span class="timeline-year font-mono text-mint">2023</span>
+                    <h3>Started BCA @ Yenepoya University</h3>
+                    <div class="timeline-img-wrap">
+                        <img src="assets/timeline/starting_journey.jpg" alt="University Journey" class="timeline-img"
+                            onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'800\' height=\'400\'%3E%3Crect width=\'100%25\' height=\'100%25\' fill=\'%23111a14\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' font-family=\'monospace\' font-size=\'20\' fill=\'%233dffa0\' text-anchor=\'middle\'%3E[JOURNEY_START.IMG]%3C/text%3E%3C/svg%3E'">
+                    </div>
+                    <p class="text-muted">Chose cybersecurity as my path. Got my first Linux machine and never looked
+                        back.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item right" data-aos="fade-left">
+                <div class="timeline-dot past"></div>
+                <div class="card timeline-card">
+                    <span class="timeline-year font-mono text-mint">2024</span>
+                    <h3>First CTF — picoCTF</h3>
+                    <div class="timeline-img-wrap">
+                        <img src="assets/timeline/first_ctf.jpg" alt="CTF Competition" class="timeline-img"
+                            onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'800\' height=\'400\'%3E%3Crect width=\'100%25\' height=\'100%25\' fill=\'%23111a14\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' font-family=\'monospace\' font-size=\'20\' fill=\'%233dffa0\' text-anchor=\'middle\'%3E[CTF_ENTRY.IMG]%3C/text%3E%3C/svg%3E'">
+                    </div>
+                    <p class="text-muted">Competed in my first CTF. Built RAKSHA. Completed Python for Security course.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item left" data-aos="fade-right">
+                <div class="timeline-dot past"></div>
+                <div class="card timeline-card">
+                    <span class="timeline-year font-mono text-mint">2025</span>
+                    <h3>Bug Bounty & Security Projects</h3>
+                    <p class="text-muted">First CVE attempt. Completed SAHAYA. TryHackMe Top 5% ranking. Applied to
+                        German universities.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item right" data-aos="fade-left">
+                <div class="timeline-dot now pulse-dot"></div>
+                <div class="card timeline-card now-card">
+                    <span class="timeline-year font-mono text-mint">2026 ← NOW</span>
+                    <h3>Portfolio Launch</h3>
+                    <p class="text-muted">Targeting OSCP certification. Internship hunt begins. You're looking at the
+                        result.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item left" data-aos="fade-right">
+                <div class="timeline-dot future"></div>
+                <div class="card timeline-card future-card">
+                    <span class="timeline-year font-mono">2027</span>
+                    <h3>MSc Cybersecurity — Germany</h3>
+                    <p class="text-muted">The goal. Planned.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item right" data-aos="fade-left">
+                <div class="timeline-dot future"></div>
+                <div class="card timeline-card future-card">
+                    <span class="timeline-year font-mono">????</span>
+                    <h3>Security Engineer / Red Team Lead</h3>
+                    <p class="text-muted">The dream. Incoming.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding">
+        <h2 class="section-title" data-aos="fade-right">Get In Touch</h2>
+        <div class="contact-grid">
+
+            <div class="contact-info" data-aos="fade-right">
+                <p class="contact-tagline">Let's talk security.</p>
+                <p class="text-muted">Whether you have a bug bounty, collab, or just want to connect — I'm here.</p>
+                <ul class="contact-links">
+                    <li>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                            <polyline points="22,6 12,13 2,6" />
+                        </svg>
+                        <a href="mailto:kashyapdayal@email.com">kashyapdayal@email.com</a>
+                    </li>
+                    <li>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                        </svg>
+                        <a href="https://github.com/kashyapdayal" target="_blank">github.com/kashyapdayal</a>
+                    </li>
+                    <li>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                        </svg>
+                        <a href="https://linkedin.com/in/kashyapdayal" target="_blank">linkedin.com/in/kashyapdayal</a>
+                    </li>
+                </ul>
+                <p class="response-time text-muted font-mono">&gt; Response time: &lt; 24 hours</p>
+            </div>
+
+            <form class="card contact-form" id="contact-form" data-aos="fade-left" onsubmit="handleContactForm(event)">
+                <div class="form-group">
+                    <label for="contact-name" class="form-label">Name</label>
+                    <input type="text" id="contact-name" name="name" class="form-input" placeholder="Your name"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="contact-email" class="form-label">Email</label>
+                    <input type="email" id="contact-email" name="email" class="form-input" placeholder="your@email.com"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="contact-msg" class="form-label">Message</label>
+                    <textarea id="contact-msg" name="message" class="form-input form-textarea"
+                        placeholder="Your message..." required></textarea>
+                </div>
+                <div id="form-feedback" class="ctf-feedback"></div>
+                <button type="submit" class="btn-primary" style="width:100%;justify-content:center;">
+                    Send Message →
+                </button>
+            </form>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" class="shield-icon">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    </svg>
+                    <span>KD</span>
+                </a>
+                <p class="text-muted">Kashyap Dayal © 2026</p>
+                <p class="footer-sub text-muted">Built with HTML, CSS &amp; Vanilla JS · GitHub Pages</p>
+                <p class="footer-quote text-muted">"Walk softly. Hack hard."</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://github.com/kashyap7225" target="_blank" aria-label="GitHub">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                    </svg>
+                </a>
+                <a href="https://linkedin.com/in/kashyapdayal" target="_blank" aria-label="LinkedIn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                    </svg>
+                </a>
+                <a href="mailto:kashyapdayal@email.com" aria-label="Email">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                        <polyline points="22,6 12,13 2,6" />
+                    </svg>
+                </a>
+            </div>
+            <a href="#" class="back-to-top btn-primary" aria-label="Back to top">↑ Top</a>
+        </div>
+    </footer>
+
+
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- Canvas Confetti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
